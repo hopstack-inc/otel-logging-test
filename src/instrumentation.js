@@ -24,9 +24,10 @@ const sdk = new NodeSDK({
   ],
 });
 
-export function startSDK() {
-  sdk.start();
-}
+sdk.start();
+// export function startSDK() {
+//   sdk.start();
+// }
 
 // gracefully shut down the SDK on process exit
 process.on("SIGTERM", () => {
