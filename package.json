@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@opentelemetry/api": "^1.4.1",
+    "@opentelemetry/auto-instrumentations-node": "^0.37.0",
+    "@opentelemetry/instrumentation-winston": "^0.31.3",
+    "@opentelemetry/sdk-metrics": "^1.13.0",
+    "@opentelemetry/sdk-node": "^0.39.1",
+    "express": "^4.18.2",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/node": "^7.16.5",
+    "@babel/preset-env": "^7.16.5"
+  },
+  "scripts": {
+    "start": "babel-node --extensions '.js,.mjs' src/app.js",
+    "dev": "nodemon --exec npm run start"
+  }
+}
