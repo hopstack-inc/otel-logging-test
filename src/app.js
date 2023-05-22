@@ -1,9 +1,9 @@
-// import { startSDK } from "./instrumentation";
+import { startSDK } from "./instrumentation";
 
 import express from "express";
 import logger from "./logger";
 
-// startSDK();
+startSDK();
 
 //  making random changes
 const PORT = parseInt(process.env.PORT || "8080");
